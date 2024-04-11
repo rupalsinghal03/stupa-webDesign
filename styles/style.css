@@ -1,0 +1,118 @@
+* {
+    align-items: center;
+    /* background: black; */
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar .nav-items ul {
+    gap: 20px;
+    color: white;
+}
+
+.navbar .nav-items ul li a {
+    color: white;
+}
+
+.nav-container {
+    background: #151669;
+}
+
+.home-component {
+    height: 100vh;
+    background-color: black;
+}
+
+.home-component h1 {
+    display: table-caption;
+    background: linear-gradient(to right, rgba(243, 57, 6, 0) 0%, rgba(250, 7, 7, 0) 61%), linear-gradient(rgb(238, 19, 19) 52%, rgb(239, 88, 18) 60%, rgb(234, 212, 23) 61%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline;
+    width: 10vw;
+    z-index: 1;
+}
+
+.container-fluid.home-component {
+    position: relative;
+}
+
+.container-fluid.home-component h1 {
+    font-size: 40vw;
+    position: relative;
+    z-index: 1;
+    /* Increased z-index for the text */
+}
+
+.container-fluid.home-component img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 1.5;
+    /* Adjust the opacity as needed */
+    z-index: 999999;
+}
+
+@media (min-width: 320px) and (max-width:481px) {
+    .container-fluid.home-component h1 {
+        font-size: 30vw;
+        /* Adjust font size for smaller screens */
+    }
+
+    .container-fluid.home-component img {
+        height: 100px !important;
+        position: absolute;
+        top: 20%;
+        transform: translate(-50%, -50%);
+        max-width: 100%;
+        max-height: 100%;
+        opacity: 1.5;
+        /* Adjust the opacity as needed */
+        z-index: 1;
+    }
+}
+
+@media (min-width:482px) and (max-width: 641px) {
+    .container-fluid.home-component h1 {
+        font-size: 30vw;
+        /* Adjust font size for smaller screens */
+    }
+
+    .container-fluid.home-component img {
+        position: absolute;
+        height: 100px;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 100%;
+        max-height: 100%;
+        opacity: 1.5;
+        /* Adjust the opacity as needed */
+        z-index: 1;
+    }
+}
+
+@media (min-width:642px) and (max-width: 961px) {
+    .container-fluid.home-component h1 {
+        font-size: 30vw;
+        /* Adjust font size for smaller screens */
+    }
+
+    .container-fluid.home-component img {
+        position: absolute;
+        height: 200px;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 100%;
+        max-height: 100%;
+        opacity: 1.5;
+        /* Adjust the opacity as needed */
+        z-index: 1;
+    }
+}
